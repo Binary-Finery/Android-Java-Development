@@ -2,23 +2,24 @@ h1 {
     color: whitesmoke;
     margin: 0;
    align-content: center;
+
     padding: 20px;
 }
 .box {
     display: flex;
     align-items:center;
-    background: #323232;
+    
  }
  .box-2{
     text-align: center;
-    
- }
+    }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     animation: slideInFromLeft 0.7s 1;
     margin: 0;
+    background: #323232;
     padding: 0;
 ;
 }
@@ -26,15 +27,18 @@ body {
 h2 {
     padding-right: 10px;
     padding-left: 10px;
-    color: rgb(228, 228, 228);
+    color:black;
 }
 h2{
-    color: #828282;
+    color: black;
 }
 
 p {
-    padding-left: 10px;
-    color: #828282;
+    margin-top:0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    color: whitesmoke
 }
 
 footer {
@@ -44,7 +48,8 @@ footer {
 }
 
 :any-link {
-    color: blue;
+    color:#fff;
+    font-weight: bold;
 }
 
 
@@ -55,4 +60,44 @@ footer {
     100% {
         transform: translateX(0);
     }
+}
+.title{
+    font-family: sans-serif;
+    text-align: center;
+    color: #828282;
+}
+.tabContainer{
+    width: auto;
+    height: 300px;
+}
+.tabContainer .buttonContainer{
+    height: 15%;
+    width: 30%;
+}
+.tabContainer .buttonContainer button{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    background-color: #eee;
+}
+
+.tabContainer .buttonContainer button:hover{
+    background-color: #aa1e1e;
+}
+.tabContainer .tabPanel{
+    height: auto;
+    background-color: grey;
+    color: black;
+    padding-top: 10px;
+    text-align:left;
+    box-sizing: border-box;
+    display: none;
 }
